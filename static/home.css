@@ -1,0 +1,42 @@
+header{
+    background-image: url("image/banner.jpg");
+    background-size:cover;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    color:white;
+    font-size: larger;
+
+}
+
+img {
+    height: 200px;
+    max-width: 100%;
+    padding-left: 10px;
+}
+
+.card1{
+    background-image:url("image/background.jpg");
+    background-repeat:repeat-y;
+    background-size: cover;
+ 
+}
+
+body{
+    text-align: center;
+    background-color: whitesmoke;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: left;
+    background-size: 400px, 200px;
+
+}
+
+footer{
+    background-image: url("image/banner.jpg");
+    height: 50px;
+    color:white;
+    padding-top: 10px;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="{{ url_for('static', filename='addrecipe.css' ) }}">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="box">
+    <h1>Add a Recipe</h1>
+    <form action="/addrecipe" method="post">
+        <label for="">Recipe Name</label>
+        <input type="text" name="recipe_name" id=""><br>
+        <label for="">Category</label>
+        <input type="text" name="category" id=""><br>
+        <label for="">Ingredient</label>
+        <input type="text" name="ingredient" id="text-box"><br>
+        <input type="submit" value="submit" id="btn">
+        <a href="{{ url_for('home')}}">Home</a>
+        
+    </div>
+</div>
+</body>
+</html>

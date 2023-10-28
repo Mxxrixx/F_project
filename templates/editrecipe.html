@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="{{ url_for('static', filename='editrecipe.css' ) }}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+        <h1>Edit Recipe</h1>
+        {% for x in info %}
+        <p>{{ x[1] }}</p>
+        <a href = "/addrecipe">Add</a>
+        <a href = "/delete/{{x[0]}}">Delete</a>
+        {% endfor %}
+    <form action="/editrecipe/{{info[0][0]}}" method="post">
+        <label for="">Recipe Name</label>
+        <input type="text" name="recipe_name" id="" value="{{info[0][1]}}"><br>
+        <label for="">category</label>
+        <input type="text" name="category" id="" value="{{info[0][2]}}"><br>
+        <label for="">Ingredient</label>
+        <input type="text" name="ingredient" id="text-box"value="{{info[0][3]}}"><br>
+        <input type="submit" value="submit" id="btn">
+        <a href="{{ url_for('home')}}" id="btn2">Home</a>
+    </form>
+    
+</div>
+</div>
+</body>
+</html>

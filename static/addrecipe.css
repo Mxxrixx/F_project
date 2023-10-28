@@ -1,0 +1,30 @@
+.container{
+    background-image: url("image/add-edit.jpg");
+    background-size:cover;
+    padding-top: 100px;
+    padding-bottom: 500px;
+    padding-left: 500px;
+    font-size:larger;
+}
+
+.box{
+    height:100px;
+    width:100px;
+    padding:10px;
+    border: 10px;
+    color:rgb(105, 71, 19);
+    font-family: script;
+    text-size-adjust: 50px;
+
+
+}
+
+#text-box{
+    height: 70px;
+    
+}
+
+#btn{
+    width: 170px;
+    margin-top: 5px;
+}
